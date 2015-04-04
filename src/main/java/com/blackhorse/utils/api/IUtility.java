@@ -6,6 +6,6 @@ import com.blackhorse.utils.exceptions.UtilityExecutionException;
  * Created by Valentin
  */
 public interface IUtility {
-    String getName();
-    void execute() throws UtilityExecutionException;
+    String getUtilityName();
+    void executeUtility() throws UtilityExecutionException;
 }

@@ -12,19 +12,16 @@ import java.io.IOException;
 /**
  * Created by Valentin
  */
+//@RunNow
 public class BuildDirContent implements IUtility {
 
-    public static void main(String[] args) {
-        new BuildDirContent().execute();
+    public static final String MODULE_NAME = "build-dir-content";
+
+    public String getUtilityName() {
+        return MODULE_NAME;
     }
 
-    @Override
-    public String getName() {
-        return null;
-    }
-
-    @Override
-    public void execute() throws UtilityExecutionException {
+    public void executeUtility() throws UtilityExecutionException {
         File torrentDir = new File("c:\\Downloads\\Vineyard Christian Music (1990 - 2012)");
 
         File[] files = torrentDir.listFiles();
